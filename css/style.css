@@ -1,0 +1,682 @@
+body {
+    background-color: #1a1a1a; /* Dark theme background */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2d2d2d;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px; /* Offset for fixed navbar */
+}
+.content-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Đảm bảo không vượt 100% */
+    padding: 0; /* Tránh padding thừa */
+    gap: 20px; /* Khoảng cách giữa các phần */
+    box-sizing: border-box;
+}
+
+
+.sidebar,
+.main-content,
+.rightbar {
+    padding: 20px;
+    background-color:#121212;
+    border-radius: 10px;
+}
+.sidebar{
+    flex: 1;
+    margin: 0 10px;
+    height: 600px;
+}
+.main-content{
+    flex: 3;
+}
+.rightbar {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    height: 550px;
+    color: white;
+}
+
+.rightbar h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.match-item:last-child {
+    border-bottom: none;
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.team-logo {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+.score-point {
+    font-weight: bold;
+    color: #17a2b8;
+    font-size: 1.2rem;
+}
+
+.team-won {
+    color: #4caf50;
+}
+
+.team-lost {
+    color: #f44336;
+}
+
+.match-time {
+    font-weight: bold;
+    color: #17a2b8;
+    font-size: 1.1rem;
+}
+.resulttoday{
+    padding-top: 5px;
+}
+.newevents{
+    text-align: center;
+}
+.sidebar .newevents {
+
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.banner-events{
+    width: 300px;
+    height: 150px;
+}
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+.title-content{
+    color: #f9a825;
+    margin: 10px;
+    text-align: center;
+}
+.images-content{
+    width: 800px;
+    height: 300;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+}
+
+.box {
+    max-height: 500px;
+    max-width: 700px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #111;
+}
+
+.box h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.round-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+  .player-card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.video-title {
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-player {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.player-card {
+    background-color: #2d2d3d;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    width: 200px; /* Fixed width for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+.player-card:hover {
+    transform: translateY(-5px);
+  } 
+.player-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.player-info {
+    margin-top: 10px;
+}
+.nav-tabs {
+    display: flex;
+    justify-content: center; /* Căn giữa các tab */
+    border-bottom: 1px solid #ddd; /* Tùy chỉnh đường kẻ dưới */
+}
+
+.nav-tabs .nav-item {
+    margin: 0 10px; /* Khoảng cách giữa các tab */
+}
+
+.nav-tabs .nav-link {
+    font-weight: bold; /* Tăng độ dày chữ */
+    color: #333; /* Màu chữ */
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff; 
+    background-color: #007bff; 
+    border-color: #007bff; 
+}
+.tab-content {
+    padding: 15px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+}
+.title-content {
+    color: #f9a825;
+    font-size: 30px;
+}
+.images-content {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.results-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #f9a825;
+}
+
+.day-section {
+    margin-top: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #f9a825;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.match .team {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.team-left {
+    text-align: left;
+}
+
+.team-right {
+    text-align: right;
+}
+
+.score {
+    width: 20%;
+    text-align: center;
+    color: #76ff03;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info {
+    width: 20%;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h5 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+/* Grid Styling */
+.gallery .row {
+    margin: 0 -15px;
+}
+
+.gallery .col-md-3 {
+    padding: 15px;
+}
+
+.gallery .img-thumbnail {
+    width: 100%;
+    height: auto;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .img-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.tournament-item {
+    display: flex;
+    align-items: center;
+    background-color: #3b4252; /* Card background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 65px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+/* Tournament details */
+.details {
+    flex-grow: 1;
+    color: #e5e9f0;
+}
+
+.details .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.details .sub-info {
+    font-size: 0.9rem;
+    color: #d8dee9;
+    margin-top: 5px;
+}
+
+.details .sub-info .location {
+    margin-right: 10px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.info > div {
+    font-size: 0.9rem;
+    color: #e5e9f0;
+}
+
+.info > div span {
+    display: block;
+    font-size: 0.8rem;
+    color: #b4b4b4;
+    margin-top: 5px;
+}
+.bracket {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2d3e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    gap: 20px;
+}
+
+.round, .grand-final {
+    flex: 1;
+    text-align: center;
+}
+
+.round h5, .grand-final h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    color: #a5adc2;
+}
+
+.match {
+    background-color: #1e2130;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #a5adc2;
+}
+
+.team-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-name {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.team-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.match-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.match-time .time,
+.match-time .date {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.grand-final {
+    margin-top: 40px;
+}
+.main-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section news */
+.news-section {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.news-section h1 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+/* Danh sách bài báo */
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  align-items: flex-start;
+  background-color: #292929;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.news-list li:hover {
+  background-color: #333333;
+  transform: scale(1.02);
+}
+
+/* Liên kết bài báo */
+.news-list li a {
+  text-decoration: none;
+  display: flex;
+  color: #e0e0e0;
+  width: 100%;
+}
+
+/* Hình ảnh minh họa */
+.news-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* Nội dung bài báo */
+.news-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-content h2 {
+  font-size: 1em;
+  margin: 0 0 5px;
+}
+
+.news-content span {
+  font-size: 0.9em;
+  color: #999999;
+}
+
+.article-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Tiêu đề */
+  .article-title {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Dòng mô tả */
+  .article-description {
+    font-size: 1.2em;
+    color: #999999;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  /* Hình ảnh minh họa */
+  .article-image {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #333333;
+  }
+  
+  /* Nội dung bài viết */
+  .article-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .article-content p:last-child {
+    margin-bottom: 0;
+  }
+  .separator {
+    width: 100%;                /* Chiều rộng toàn màn hình */
+    height: 2px;                /* Độ dày */
+    background-color: #444;     /* Màu của đường phân cách */
+  }
+  
+  /* Footer */
+  .footer {
+    width: 2000px;                /* Tràn toàn màn hình */
+    background-color: #000;     /* Nền đen */
+    color: #fff;                /* Màu chữ */
+    padding: 20px 0;            /* Khoảng cách trên-dưới */
+  }
+  
+  .footer-container {
+    width: 1200px;      
+    margin: 0 auto;             
+  }
+  
+  .footer-top {
+    display: flex;              /* Dùng flexbox để căn chỉnh */
+    justify-content: space-evenly; /* Cách đều các mục */
+    margin-bottom: 20px;        /* Khoảng cách giữa phần trên và phần dưới */
+  }
+  
+  .footer-top p {
+    color: #aaa;                
+    font-size: 14px;          
+  }
+  
+  .footer-bottom {
+    text-align: center;      
+    font-size: 12px;           
+    color: #555;              
+  }
