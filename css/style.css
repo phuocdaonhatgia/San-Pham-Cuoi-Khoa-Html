@@ -647,13 +647,14 @@ h2 {
   }
   .separator {
     width: 100%;                /* Chiều rộng toàn màn hình */
-    height: 2px;                /* Độ dày */
+    height: 2px;                
     background-color: #444;     /* Màu của đường phân cách */
   }
   
   /* Footer */
   .footer {
-    width: 2000px;                /* Tràn toàn màn hình */
+    width: 1460px;     
+    height: 250px;           
     background-color: #000;     /* Nền đen */
     color: #fff;                /* Màu chữ */
     padding: 20px 0;            /* Khoảng cách trên-dưới */
@@ -663,7 +664,20 @@ h2 {
     width: 1200px;      
     margin: 0 auto;             
   }
-  
+.footer-social{
+    display: flex;
+    justify-content: center;
+}
+  .footer-social a {
+    margin: 15px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
   .footer-top {
     display: flex;              /* Dùng flexbox để căn chỉnh */
     justify-content: space-evenly; /* Cách đều các mục */
@@ -677,6 +691,6 @@ h2 {
   
   .footer-bottom {
     text-align: center;      
-    font-size: 12px;           
+    font-size: 15px;           
     color: #555;              
   }
